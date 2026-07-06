@@ -146,14 +146,6 @@ a.active {
   font-size: 16px;
 }
 
-.social-menu {
-  margin-top: 30px;
-}
-
-.social-menu li a {
-  font-size: 16px;
-}
-
 .copyright {
   display: none;
 }
@@ -348,6 +340,14 @@ a.active {
   font-weight: 300;
 }
 
+.about-links {
+  margin: 40px auto 0;
+}
+
+.about-links p + p {
+  margin-top: 5px;
+}
+
 .home-about {
   border-top: 2px solid #ddd;
 }
@@ -449,18 +449,6 @@ a.active {
     white-space: pre;
   }
 
-  .social-menu {
-    position: absolute;
-    bottom: 70px;
-    left: 40px;
-    margin-top: 0;
-  }
-
-  .social-menu li a {
-    font-size: 13px;
-    font-weight: 300;
-  }
-
   .copyright {
     position: absolute;
     bottom: 30px;
@@ -496,6 +484,7 @@ a.active {
   .page-title h1,
   .about-intro,
   .cv-section,
+  .about-links,
   .single .text,
   .single > h2,
   .single > h3,
@@ -533,11 +522,6 @@ a.active {
     left: 60px;
   }
 
-  .social-menu {
-    bottom: 85px;
-    left: 60px;
-  }
-
   .page-title {
     padding-top: 57px;
   }
@@ -545,6 +529,7 @@ a.active {
   .page-title h1,
   .about-intro,
   .cv-section,
+  .about-links,
   .single .text,
   .single > h2,
   .single > h3,
