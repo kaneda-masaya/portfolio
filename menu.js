@@ -9,7 +9,7 @@ toggle?.addEventListener('click', () => {
   document.body.style.overflow = open ? '' : 'hidden';
 });
 
-window.matchMedia('(min-width: 1024px)').addEventListener('change', (event) => {
+window.matchMedia('(min-width: 1200px)').addEventListener('change', (event) => {
   if (!event.matches) return;
   toggle?.setAttribute('aria-expanded', 'false');
   menu?.classList.remove('is-open');

@@ -129,7 +129,8 @@ a.active {
   list-style: none;
 }
 
-.menu li a {
+.menu li a,
+.menu-label {
   display: block;
   padding: 7px 0;
   font-size: 24px;
@@ -138,7 +139,7 @@ a.active {
 }
 
 .project-menu {
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .project-menu li a {
@@ -290,8 +291,11 @@ a.active {
 }
 
 .profile-image {
-  width: 150px;
-  margin: 0 0 30px;
+  width: 208px;
+  aspect-ratio: 1;
+  margin: 0 auto 30px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .about-intro p {
@@ -350,6 +354,7 @@ a.active {
 
 .home-about {
   border-top: 2px solid #ddd;
+  min-height: auto;
 }
 
 .home-about .home-about__title {
@@ -391,9 +396,24 @@ a.active {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  .page-title h1,
+  .about-intro,
+  .cv-section,
+  .about-links,
+  .single .text,
+  .single > h2,
+  .single > h3,
+  .single > p,
+  .single > ul,
+  .single > dl,
+  .single > hr,
+  .gallery {
+    max-width: 760px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .header {
     position: fixed;
     top: 0;
@@ -428,7 +448,8 @@ a.active {
     visibility: visible;
   }
 
-  .menu li a {
+  .menu li a,
+  .menu-label {
     display: inline;
     padding: 0;
     font-size: 14px;
@@ -437,7 +458,7 @@ a.active {
   }
 
   .project-menu {
-    margin-top: 45px;
+    margin-top: 0;
   }
 
   .project-menu li a {
@@ -481,30 +502,12 @@ a.active {
     padding: 37px 20px 0;
   }
 
-  .page-title h1,
-  .about-intro,
-  .cv-section,
-  .about-links,
-  .single .text,
-  .single > h2,
-  .single > h3,
-  .single > p,
-  .single > ul,
-  .single > dl,
-  .single > hr {
-    max-width: 70%;
-  }
-
   .single {
     padding: 25px 20px 80px;
   }
-
-  .gallery {
-    max-width: 70%;
-  }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
   .header__content {
     padding: 60px 0 145px 60px;
   }
@@ -514,7 +517,7 @@ a.active {
   }
 
   .project-menu {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .copyright {
@@ -526,20 +529,6 @@ a.active {
     padding-top: 57px;
   }
 
-  .page-title h1,
-  .about-intro,
-  .cv-section,
-  .about-links,
-  .single .text,
-  .single > h2,
-  .single > h3,
-  .single > p,
-  .single > ul,
-  .single > dl,
-  .single > hr,
-  .gallery {
-    max-width: 65%;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
