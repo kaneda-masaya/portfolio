@@ -293,7 +293,7 @@ a.active {
 .profile-image {
   width: 208px;
   aspect-ratio: 1;
-  margin: 0 auto 30px;
+  margin: 0 0 30px;
   object-fit: cover;
   object-position: center top;
 }
@@ -365,8 +365,8 @@ a.active {
 .home-about .profile-image {
   width: 208px;
   aspect-ratio: 1;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 0;
+  margin-left: 0;
   object-fit: cover;
   object-position: center top;
 }
