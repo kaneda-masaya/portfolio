@@ -357,9 +357,24 @@ a.active {
   min-height: auto;
 }
 
+.home-about__inner {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .home-about .home-about__title {
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+.home-about .home-about__title,
+.home-about .about-intro,
+.home-about .cv-section,
+.home-about .about-links {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 760px;
 }
 
 .home-about .profile-image {
@@ -504,6 +519,14 @@ a.active {
 
   .single {
     padding: 25px 20px 80px;
+  }
+
+  .home-about {
+    padding: 25px 10px 80px;
+  }
+
+  .home-about__inner {
+    padding: 20px;
   }
 }
 
